@@ -5,7 +5,7 @@ import { supabase } from '../lib/supabase';
 import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
-import { Event, Task, List, ListItem, MealPlan, Reminder, Note } from '../lib/types';
+import { Event, Task, List, MealPlan, Reminder, Note } from '../lib/types';
 import { CATEGORY_COLORS, MEAL_COLORS } from '../lib/constants';
 import { format, parseISO } from 'date-fns';
 import { Calendar, CheckSquare, ShoppingCart, UtensilsCrossed, Bell, StickyNote, Plus, X } from 'lucide-react';
@@ -614,8 +614,8 @@ export function PlannerPage() {
                       <div className="flex justify-between items-start">
                         <div>
                           <div className="flex items-center gap-2">
-                            <span className={`text-xs px-2 py-1 rounded ${MEAL_COLORS[meal.meal_type]?.bg || 'bg-slate-100'} ${MEAL_COLORS[meal.meal_type]?.text || 'text-slate-700'}`}>
-                              {meal.meal_type}
+                            <span className={`text-xs px-2 py-1 rounded ${meal.meal_type ? MEAL_COLORS[meal.meal_type]?.bg : 'bg-slate-100'} ${meal.meal_type ? MEAL_COLORS[meal.meal_type]?.text : 'text-slate-700'}`}>
+                              {meal.meal_type || 'meal'}
                             </span>
                             <span className="text-sm text-slate-600">{format(parseISO(meal.date), 'MMM d, yyyy')}</span>
                           </div>

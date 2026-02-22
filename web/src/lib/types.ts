@@ -42,7 +42,7 @@ export interface ChildProfile {
   created_at: string;
 }
 
-export interface EventCategory = 'health' | 'family' | 'activity' | 'chores' | 'other';
+export type EventCategory = 'health' | 'family' | 'activity' | 'chores' | 'other';
 
 export interface Event {
   id: string;
@@ -59,7 +59,7 @@ export interface Event {
   created_at: string;
 }
 
-export interface TaskPriority = 'low' | 'medium' | 'high';
+export type TaskPriority = 'low' | 'medium' | 'high';
 
 export interface Task {
   id: string;
@@ -74,7 +74,7 @@ export interface Task {
   created_at: string;
 }
 
-export interface ListType = 'grocery' | 'shopping' | 'custom';
+export type ListType = 'grocery' | 'shopping' | 'custom';
 
 export interface List {
   id: string;
@@ -96,7 +96,7 @@ export interface ListItem {
   created_at: string;
 }
 
-export interface MealType = 'breakfast' | 'lunch' | 'dinner' | 'snack';
+export type MealType = 'breakfast' | 'lunch' | 'dinner' | 'snack';
 
 export interface MealPlan {
   id: string;
@@ -128,7 +128,7 @@ export interface Note {
   updated_at: string;
 }
 
-export interface PostVisibility = 'family' | 'public';
+export type PostVisibility = 'family' | 'public';
 
 export interface Post {
   id: string;
