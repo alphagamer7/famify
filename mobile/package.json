@@ -1,0 +1,17 @@
+{
+  "name": "famify",
+  "version": "1.0.0",
+  "description": "Family management app - monorepo",
+  "private": true,
+  "scripts": {
+    "seed": "tsx scripts/seed.ts",
+    "web:dev": "cd web && npm run dev",
+    "web:build": "cd web && npm run build",
+    "mobile:run": "cd mobile && flutter run"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.38.4",
+    "@types/node": "^20.10.4",
+    "tsx": "^4.7.0"
+  }
+}
