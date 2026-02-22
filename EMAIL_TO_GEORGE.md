@@ -12,8 +12,7 @@ I'm excited to share **Famify**, a comprehensive family management platform I've
 
 ## 🌐 Live Demo
 
-**Production URL:** https://famify.vercel.app
-_(Replace with your actual Vercel URL after deployment)_
+**Production URL:** https://famify-ten.vercel.app
 
 **Demo Credentials:**
 - Email: `john@famify-demo.com`
