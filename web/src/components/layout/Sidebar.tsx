@@ -18,8 +18,8 @@ export function Sidebar() {
         <div className="flex items-center gap-3">
           <img src="/logo.svg" alt="Famify Logo" className="w-12 h-12" />
           <div>
-            <h1 className="text-2xl font-bold text-emerald-600">Famify</h1>
-            <p className="text-xs text-slate-500">Family Management</p>
+            <h1 className="text-2xl font-display font-extrabold text-emerald-600 tracking-tight">Famify</h1>
+            <p className="text-xs text-slate-600 font-medium">Family Management</p>
           </div>
         </div>
       </div>

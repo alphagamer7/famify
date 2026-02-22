@@ -50,8 +50,8 @@ export function LoginPage() {
             <div className="flex justify-center mb-4">
               <img src="/logo.svg" alt="Famify Logo" className="w-24 h-24" />
             </div>
-            <h1 className="text-4xl font-bold text-emerald-600">Famify</h1>
-            <p className="text-slate-500 mt-2">Manage your family, together</p>
+            <h1 className="text-5xl font-display font-extrabold text-emerald-600 tracking-tight">Famify</h1>
+            <p className="text-slate-600 mt-2 font-medium">Manage your family, together</p>
           </div>
           <CardTitle>Sign In</CardTitle>
         </CardHeader>
